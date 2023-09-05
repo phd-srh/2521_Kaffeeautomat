@@ -8,6 +8,6 @@ public class Nachricht {
     }
 
     public void drucke() {
-        // TODO
+        System.out.println(id + " : " + text);
     }
 }

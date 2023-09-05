@@ -4,10 +4,14 @@ public class Nachrichtenschlange {
     private ArrayList<Nachricht> liste;
 
     public void neueNachricht(Nachricht n) {
-        // TODO
+        liste.add(n);
     }
 
     public void drucke() {
-        // TODO
+        for (int i = 0; i < liste.size(); i++) {
+            System.out.print(i+1);
+            System.out.print(". ");
+            liste.get(i).drucke();
+        }
     }
 }
